@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreerActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/Titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/EventCreate" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/valueNbPersonne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NbPersonne"
+        android:layout_alignBottom="@+id/NbPersonne"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_toRightOf="@+id/NbPersonne"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <TextView
+        android:id="@+id/NbPersonne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="26dp"
+        android:text="@string/NbPersonne" />
+
+    <TextView
+        android:id="@+id/AgeMoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/valueAgeMoy"
+        android:layout_alignLeft="@+id/NbPersonne"
+        android:text="@string/AgeMoy" />
+
+    <EditText
+        android:id="@+id/valueAgeMoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/valueNbPersonne"
+        android:layout_below="@+id/valueNbPersonne"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/Theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AgeMoy"
+        android:layout_below="@+id/AgeMoy"
+        android:layout_marginTop="38dp"
+        android:text="@string/Theme" />
+
+    <TextView
+        android:id="@+id/valueTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Theme"
+        android:layout_alignRight="@+id/Test"
+        android:layout_toRightOf="@+id/NbPersonne"
+        android:text="" />
+
+    <Button
+        android:id="@+id/ValiderCrea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueTheme"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="@string/Valider" />
+
+</RelativeLayout>
